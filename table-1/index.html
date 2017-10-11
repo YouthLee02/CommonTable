@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>组件开发</title>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/table.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#dg").grid({
+                id:"dg",
+                url:"./mock/table.json",
+                columns: [
+                    {field:'ck',checkbox:true},
+                    {field: 'ID', title: '设备名称', width:100, align: 'center'},
+                    {field: 'name', title: '所属厂站', width: 150, align: 'left'},
+                    {field: 'descrtion', title: '电压等级', width: 350, align: 'left'},
+                    {field: 'Price', title: '接入电网', width: 100, align: 'left'}
+                ],
+                isoddcolor: false,
+                dohandle: true,
+                pagination: true,
+                searchnation: true,
+                pagesize: 5
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <form id="form1">
+        <table id="dg"></table>
+    </form>
+
+
+</body>
+</html>

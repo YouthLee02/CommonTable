@@ -1,0 +1,319 @@
+body {
+    font: 14px/1.43 "Helvetica Neue", Tahoma, "Microsoft YaHei", Arial;
+    color: #253443;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #FFF;
+    font-size: 12px;
+    width: 100%;
+    border: 1;
+    width: 100%;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table thead tr {
+    background-color: #E6F0FF;
+}
+table thead tr th {
+	padding: 2px 5px;
+	font-weight: normal;
+	color: #999;
+	border-bottom: 1px solid #B50802;
+	vertical-align: bottom;
+	line-height: 20px;
+	position: relative;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table tbody tr td {
+    padding: 8px;
+    border-top: 0px;
+    border-bottom: 1px solid #DDD;
+    vertical-align: middle;
+    line-height: 20px;
+}
+table tfoot tr td {
+    width: 100%;
+    background-color: #F4F4F4;
+    height: 20px;
+    padding: 8px 0px;
+    color: #000;
+}
+table tfoot tr td input {
+    width: 30px;
+    float: left;
+}
+table tfoot tr td span {
+    display: inline-block;
+    cursor: pointer;
+    height:20px;
+    padding:0 10px;
+    float: left;
+}
+.mouseover {
+    background-color: #EAF2FF;
+    color: #000;
+}
+
+.pagging {
+	margin: 5px 0 10px 0;
+	float: right;
+}
+
+#tableBox .layui-form-label {
+	width:auto;
+    float: left;
+	display: block;
+	padding: 5px 15px;
+	width: 80px;
+	font-weight: 400;
+	text-align: right;
+}
+
+#tableBox .layui-input-inline {
+  	width:72px;
+  	float: left;
+}
+
+.export {
+	float: left;
+}
+
+.rowOf {
+    width: 60px;
+	height: 30px;
+}
+
+.layui-btn {
+	line-height: 30px;
+    height: 30px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: .9;
+    float: left;
+    margin-right: 10px;
+}
+
+.fl-le {
+	float: left;
+	margin-right: 10px;
+}
+
+.layui-form-label {
+	margin-top: 5px;
+}
+
+.sort span:after {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 58px;
+    border: 1px solid #ccc;
+    border-color: transparent transparent #ccc transparent;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+.sort span::before {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 58px;
+    border: 1px solid #ccc;
+    border-color: #ccc transparent transparent transparent;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+.sort {
+	cursor: pointer;
+}
+
+.searchParent {
+	display: table;
+	margin-left: 10px;
+	float: left;
+}
+
+.form-search {
+	display: table-cell;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px 0px 0px 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    margin-top: 5px;
+}
+
+.input-group-btn {
+    display: table-cell;
+}
+
+.btn {
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px 4px 4px 0px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    border-left: none;
+}
+
+.btn:hover {
+	color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+/*                  model          */
+.model {
+    width: 100%;
+    height: 100%;
+    background:rgba(230, 230, 230, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.infor {
+    width: 500px;
+    height: 300px;
+    /*border: 1px solid #000;*/
+    border-radius: 20px;
+    background: #0b847b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    margin: auto;
+}
+.infor-off {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #000;
+    font-size: 20px;
+}
+.infor-add {
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    width: 60px;
+    height: 30px;
+    background: #219999;
+    line-height: 30px;
+    text-align: center;
+}
+.infor-change{
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    width: 60px;
+    height: 30px;
+    background: #219999;
+    line-height: 30px;
+    text-align: center;
+}
+.attr-model {
+    width: 400px;
+    height: 200px;
+
+    margin: 50px;
+}
+.columns-infor {
+    width: 400px;
+    height: 40px;
+}
+.columns-attr {
+    margin: 8px;
+    float: left;
+    line-height: 20px;
+}
+.columns-content {
+    float: left;
+    border: 1px solid #333;
+    width: 300px;
+    height: 30px;
+    margin: 4px;
+    background: #0b847b;
+}
+.table-handle {
+    width: 200px;
+    height: 40px;
+    /*background: #ccc;*/
+    margin-left: 300px;
+    margin-top: 5px;
+}
+.handle-add {
+    width: 60px;
+    height: 30px;
+    /*margin-left: 300px;*/
+    /*margin-top: 5px;*/
+    background: #0b847b;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    float: left;
+}
+.handle-change {
+    width: 60px;
+    height: 30px;
+    margin-left: 5px;
+    background: #0b847b;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    float: left;
+}
+.handle-delete {
+    width: 60px;
+    height: 30px;
+    margin-left: 5px;
+    background: #0b847b;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    float: left;
+}
